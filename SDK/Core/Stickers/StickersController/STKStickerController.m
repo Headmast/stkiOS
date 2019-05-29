@@ -571,7 +571,8 @@ void *modifiedPacksContext = &modifiedPacksContext;
 - (void)reloadStickersInputViews {
 	[self.textInputView reloadInputViews];
 	if (!self.isKeyboardShowed) {
-		[self.textInputView becomeFirstResponder];
+        [self.textInputView resignFirstResponder];
+        [self.textInputView becomeFirstResponder];
 	}
 }
 
