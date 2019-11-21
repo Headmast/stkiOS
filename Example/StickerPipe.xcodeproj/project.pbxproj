@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -60,16 +60,11 @@
 		5FA651F52386BDED0018AC54 /* STKStickerSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA651B12386BDEC0018AC54 /* STKStickerSettingsCell.xib */; };
 		5FA651F62386BDED0018AC54 /* STKStickersShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FA651B22386BDEC0018AC54 /* STKStickersShopViewController.xib */; };
 		5FA651F72386BDED0018AC54 /* StickerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FA651B32386BDEC0018AC54 /* StickerModel.xcdatamodeld */; };
-		5FA651FD2386BDFE0018AC54 /* DFImageManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651F82386BDFD0018AC54 /* DFImageManager.framework */; };
-		5FA651FE2386BDFE0018AC54 /* DFImageManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651F82386BDFD0018AC54 /* DFImageManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5FA651FF2386BDFE0018AC54 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651F92386BDFE0018AC54 /* AFNetworking.framework */; };
-		5FA652002386BDFE0018AC54 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651F92386BDFE0018AC54 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5FA652012386BDFE0018AC54 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FA2386BDFE0018AC54 /* SDWebImage.framework */; };
-		5FA652022386BDFE0018AC54 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FA2386BDFE0018AC54 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5FA652032386BDFE0018AC54 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FB2386BDFE0018AC54 /* MBProgressHUD.framework */; };
-		5FA652042386BDFE0018AC54 /* MBProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FB2386BDFE0018AC54 /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5FA652052386BDFE0018AC54 /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FC2386BDFE0018AC54 /* SDWebImageMapKit.framework */; };
-		5FA652062386BDFE0018AC54 /* SDWebImageMapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FC2386BDFE0018AC54 /* SDWebImageMapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FA652082386CF920018AC54 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FA2386BDFE0018AC54 /* SDWebImage.framework */; platformFilter = ios; };
+		5FA6520A2386CF920018AC54 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FB2386BDFE0018AC54 /* MBProgressHUD.framework */; platformFilter = ios; };
+		5FA6520C2386CF920018AC54 /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651FC2386BDFE0018AC54 /* SDWebImageMapKit.framework */; platformFilter = ios; };
+		5FA6520E2386CF920018AC54 /* DFImageManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651F82386BDFD0018AC54 /* DFImageManager.framework */; platformFilter = ios; };
+		5FA652102386CF920018AC54 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA651F92386BDFE0018AC54 /* AFNetworking.framework */; platformFilter = ios; };
 		5FBA203E238698F100DCFB5F /* SticherPipeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBA2035238698F100DCFB5F /* SticherPipeSDK.framework */; };
 		5FBA2043238698F100DCFB5F /* SticherPipeSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBA2042238698F100DCFB5F /* SticherPipeSDKTests.m */; };
 		5FBA2045238698F100DCFB5F /* SticherPipeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBA2037238698F100DCFB5F /* SticherPipeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -205,34 +200,6 @@
 			remoteInfo = StickerFactory;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5FA651222386BB920018AC54 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5FA652072386BDFE0018AC54 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5FA652042386BDFE0018AC54 /* MBProgressHUD.framework in Embed Frameworks */,
-				5FA651FE2386BDFE0018AC54 /* DFImageManager.framework in Embed Frameworks */,
-				5FA652062386BDFE0018AC54 /* SDWebImageMapKit.framework in Embed Frameworks */,
-				5FA652022386BDFE0018AC54 /* SDWebImage.framework in Embed Frameworks */,
-				5FA652002386BDFE0018AC54 /* AFNetworking.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5FA651382386BDEC0018AC54 /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
@@ -508,6 +475,11 @@ StickerPipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA6520E2386CF920018AC54 /* DFImageManager.framework in Frameworks */,
+				5FA652102386CF920018AC54 /* AFNetworking.framework in Frameworks */,
+				5FA6520A2386CF920018AC54 /* MBProgressHUD.framework in Frameworks */,
+				5FA6520C2386CF920018AC54 /* SDWebImageMapKit.framework in Frameworks */,
+				5FA652082386CF920018AC54 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,13 +495,8 @@ StickerPipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FA651FD2386BDFE0018AC54 /* DFImageManager.framework in Frameworks */,
-				5FA652032386BDFE0018AC54 /* MBProgressHUD.framework in Frameworks */,
-				5FA651FF2386BDFE0018AC54 /* AFNetworking.framework in Frameworks */,
 				6E19A0AC1B788E1B002DC75F /* StoreKit.framework in Frameworks */,
-				5FA652052386BDFE0018AC54 /* SDWebImageMapKit.framework in Frameworks */,
 				6EDC5ED01B41328000EBB034 /* CoreData.framework in Frameworks */,
-				5FA652012386BDFE0018AC54 /* SDWebImage.framework in Frameworks */,
 				9B3317339C28826EF56455A1 /* Pods_StickerPipe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1343,7 +1310,6 @@ StickerPipeTests.xctest */,
 				5FBA2031238698F100DCFB5F /* Sources */,
 				5FBA2032238698F100DCFB5F /* Frameworks */,
 				5FBA2033238698F100DCFB5F /* Resources */,
-				5FA651222386BB920018AC54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1381,7 +1347,6 @@ StickerPipeTests.xctest */,
 				6EF264511B3C0F830099A657 /* Frameworks */,
 				6EF264521B3C0F830099A657 /* Resources */,
 				46050372AA804383AD6A6ECF /* [CP] Embed Pods Frameworks */,
-				5FA652072386BDFE0018AC54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1744,13 +1709,18 @@ StickerPipeTests.xctest */;
 				INFOPLIST_FILE = SticherPipeSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.SticherPipeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1790,12 +1760,17 @@ StickerPipeTests.xctest */;
 				INFOPLIST_FILE = SticherPipeSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.SticherPipeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1826,7 +1801,11 @@ StickerPipeTests.xctest */;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SticherPipeSDKTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.SticherPipeSDKTests;
@@ -1859,7 +1838,11 @@ StickerPipeTests.xctest */;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SticherPipeSDKTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.SticherPipeSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1968,7 +1951,10 @@ StickerPipeTests.xctest */;
 				);
 				INFOPLIST_FILE = StickerPipe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.stickerpipe.demoSDK;
 				PRODUCT_NAME = StickerPipe;
 				PROVISIONING_PROFILE = "";
@@ -1993,7 +1979,10 @@ StickerPipeTests.xctest */;
 				);
 				INFOPLIST_FILE = StickerPipe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.stickerpipe.demoSDK;
 				PRODUCT_NAME = StickerPipe;
 				PROVISIONING_PROFILE = "";
@@ -2013,7 +2002,11 @@ StickerPipeTests.xctest */;
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = StickerPipeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-08.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "StickerPipe\nStickerPipe\nStickerPipeTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickerPipe.app/StickerPipe";
@@ -2029,7 +2022,11 @@ StickerPipeTests.xctest */;
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = StickerPipeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-08.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "StickerPipe\nStickerPipe\nStickerPipeTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickerPipe.app/StickerPipe";
