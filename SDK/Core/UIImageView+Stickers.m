@@ -11,7 +11,7 @@
 #import <objc/runtime.h>
 #import "UIImage+Tint.h"
 #import "STKImageManager.h"
-#import "UIImageView+WebCache.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 #import "UIImage+CustomBundle.h"
 #import "helper.h"
 
@@ -107,7 +107,7 @@
 }
 
 - (void)stk_cancelStickerImageLoading: (UIImageView*)stickerImageView {
-	[stickerImageView sd_cancelCurrentAnimationImagesLoad];
+	//[stickerImageView sd_cancelCurrentAnimationImagesLoad];
 }
 
 @end

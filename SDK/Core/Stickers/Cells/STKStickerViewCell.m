@@ -7,10 +7,11 @@
 //
 
 #import <SDWebImage/SDWebImageManager.h>
+#import <SDWebImage/SDImageCache.h>
 #import "STKStickerViewCell.h"
 #import "UIImage+Tint.h"
 #import "STKUtility.h"
-#import "UIImageView+WebCache.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 #import "STKWebserviceManager.h"
 #import "UIView+CordsAdditions.h"
 #import "UIView+LayoutAdditions.h"
@@ -54,7 +55,7 @@
 - (void)prepareForReuse {
 	[self.imageOperation cancel];
 	self.imageView.image = nil;
-	[self.imageView sd_cancelCurrentAnimationImagesLoad];
+	//[self.imageView sd_cancelCurrentAnimationImagesLoad];
 	[[SDWebImageManager sharedManager] cancelAll];
 }
 
@@ -88,7 +89,7 @@
 	NSCharacterSet* characterSet = [NSCharacterSet characterSetWithCharactersInString: @"[]"];
 	NSString* stickerName = [stickerMessage stringByTrimmingCharactersInSet: characterSet];
 
-	[[SDImageCache sharedImageCache] queryDiskCacheForKey: stickerName done: ^ (UIImage* image, SDImageCacheType cacheType) {
+	[[SDImageCache sharedImageCache] queryCacheOperationForKey: stickerName done: ^ (UIImage* image, NSData* null, SDImageCacheType cacheType) {
 		if (image) {
 			weakSelf.imageView.image = image;
 			[weakSelf setNeedsLayout];
@@ -99,7 +100,7 @@
 				self.imageOperation = [[STKWebserviceManager sharedInstance] downloadImageWithURL: [NSURL URLWithString: urlString]
 																					   completion: ^ (UIImage* downloadedImage, NSData* data, NSError* error, BOOL finished) {
 																						   if (downloadedImage && finished) {
-																							   [[SDImageCache sharedImageCache] storeImage: downloadedImage forKey: stickerName];
+																							   [[SDImageCache sharedImageCache] storeImage: downloadedImage forKey: stickerName completion: ^(){}];
 																							   if ([self.stickerMessage isEqualToString: stickerMessage]) {
 																								   dispatch_async(dispatch_get_main_queue(), ^ {
 																									   weakSelf.imageView.image = downloadedImage;

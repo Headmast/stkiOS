@@ -1,0 +1,4 @@
+#github "AFNetworking/AFNetworking" == 3.2.1
+github "kean/DFImageManager" == 2.0.1
+github "jdg/MBProgressHUD" == 1.1.0
+github "SDWebImage/SDWebImage" == 5.3.1

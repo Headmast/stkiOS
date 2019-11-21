@@ -10,8 +10,8 @@
 #import "NSManagedObject+STKAdditions.h"
 #import "NSManagedObjectContext+STKAdditions.h"
 #import "STKUtility.h"
-#import "SDWebImageDownloader.h"
-#import "SDImageCache.h"
+#import "SDWebImage/SDWebImageDownloader.h"
+#import "SDWebImage/SDImageCache.h"
 
 @implementation STKSticker
 
@@ -21,7 +21,7 @@
 														 progress: nil
 														completed: ^ (UIImage* image, NSData* data, NSError* error, BOOL finished) {
 															if (image && finished) {
-																[[SDImageCache sharedImageCache] storeImage: image forKey: [self.stickerID stringValue]];
+																[[SDImageCache sharedImageCache] storeImage: image forKey: [self.stickerID stringValue] completion: ^(){}];
 															}
 														}];
 }

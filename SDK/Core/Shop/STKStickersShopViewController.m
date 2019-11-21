@@ -7,7 +7,7 @@
 //
 
 #import "STKStickersShopViewController.h"
-#import "UIWebView+AFNetworking.h"
+#import "AFNetworking/UIWebView+AFNetworking.h"
 #import "STKStickersManager.h"
 #import "STKInAppProductsManager.h"
 #import "STKStickersConstants.h"

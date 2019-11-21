@@ -9,6 +9,7 @@
 #import "STKImageManager.h"
 #import <objc/runtime.h>
 #import <SDWebImage/SDWebImageManager.h>
+#import <SDWebImage/SDImageCache.h>
 #import "STKWebserviceManager.h"
 #import "STKUtility.h"
 #import "STKStickersManager.h"
@@ -33,7 +34,7 @@
     
     NSString* density = [STKStickersManager downloadMaxImages] ? [STKUtility maxDensity] : [STKUtility scaleString];
 
-	[[SDImageCache sharedImageCache] queryDiskCacheForKey: stickerName done: ^ (UIImage* image, SDImageCacheType cacheType) {
+	[[SDImageCache sharedImageCache] queryCacheOperationForKey: stickerName done: ^ (UIImage* image, NSData* null, SDImageCacheType cacheType) {
 		if (image) {
 			completion(nil, image);
 		} else {
@@ -42,7 +43,7 @@
 				self.imageTask = [[STKWebserviceManager sharedInstance] downloadImageWithURL: urlString
 																				  completion: ^ (UIImage* downloadedImage, NSData* data, NSError* error, BOOL finished) {
 																					  if (downloadedImage && finished) {
-																						  [[SDImageCache sharedImageCache] storeImage: downloadedImage forKey: stickerName];
+                                                                                          [[SDImageCache sharedImageCache] storeImage: downloadedImage forKey: stickerName completion: ^(){}];
 																						  if (completion) {
 																							  completion(nil, downloadedImage);
 																						  }

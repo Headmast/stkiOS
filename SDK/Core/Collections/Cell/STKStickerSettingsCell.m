@@ -7,7 +7,8 @@
 //
 
 #import "STKStickerSettingsCell.h"
-#import "DFImageManagerKit.h"
+#import "DFImageManager/DFImageManagerKit.h"
+#import "DFImageManager/UIImageView+DFImageManager.h"
 #import "STKWebserviceManager.h"
 #import "STKStickerPack+CoreDataProperties.h"
 

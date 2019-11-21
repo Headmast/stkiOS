@@ -1,0 +1,13 @@
+build/
+project.xcworkspace/
+xcuserdata/
+.idea/Just.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/xcode.xml
+encodings.xml
+
+Carthage/Checkouts
+Carthage/Build/

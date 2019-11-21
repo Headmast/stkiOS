@@ -6,7 +6,7 @@
 #import <SDWebImage/SDWebImageDownloader.h>
 
 #import "STKWebserviceManager.h"
-#import "AFHTTPSessionManager.h"
+#import "AFNetworking/AFHTTPSessionManager.h"
 #import "STKStickersManager.h"
 #import "STKUUIDManager.h"
 #import "STKApiKeyManager.h"

@@ -11,10 +11,10 @@ Pod::Spec.new do |s|
 
   s.framework       = 'CoreData'
   s.requires_arc    = true
-  s.dependency       'AFNetworking', '3.1.0'
-  s.dependency       'DFImageManager', '0.8.0'
-  s.dependency       'MBProgressHUD', '1.0.0'
-  s.dependency       'SDWebImage', '3.8.2'
+#  s.dependency       'AFNetworking', '3.2.1'
+#  s.dependency       'DFImageManager', '2.0.1'
+#  s.dependency       'MBProgressHUD', '1.1.0'
+#  s.dependency       'SDWebImage', '5.3.1'
 
   s.resource = 'SDK/Resources/*'
   s.source_files  = "SDK/**/*.{h,m}"
