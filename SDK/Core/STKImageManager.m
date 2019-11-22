@@ -8,7 +8,7 @@
 
 #import "STKImageManager.h"
 #import <objc/runtime.h>
-#import <SDWebImage/SDWebImageManager.h>
+#import "SDWebImageManager.h"
 #import "STKWebserviceManager.h"
 #import "STKUtility.h"
 #import "STKStickersManager.h"
