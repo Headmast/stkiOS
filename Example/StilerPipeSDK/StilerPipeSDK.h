@@ -16,9 +16,11 @@ FOUNDATION_EXPORT const unsigned char StilerPipeSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <StilerPipeSDK/PublicHeader.h>
 
-#import "STKStickerController.h"
-#import "STKStickersConstants.h"
-#import "STKStickersManager.h"
-#import "STKImageManager.h"
-#import "STKShowStickerButton.h"
-#import "UIImageView+Stickers.h"
+#import <StilerPipeSDK/STKStickerController.h>
+#import <StilerPipeSDK/STKStickersConstants.h>
+#import <StilerPipeSDK/STKStickersManager.h>
+#import <StilerPipeSDK/STKImageManager.h>
+#import <StilerPipeSDK/STKShowStickerButton.h>
+#import <StilerPipeSDK/UIImageView+Stickers.h>
+#import <StilerPipeSDK/STKStickerHeaderDelegateManager.h>
+#import <StilerPipeSDK/UIView+CordsAdditions.h>

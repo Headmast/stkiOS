@@ -11,65 +11,65 @@
 		5FC88E962387C33400C71FCF /* StilerPipeSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88E952387C33400C71FCF /* StilerPipeSDKTests.m */; };
 		5FC88E982387C33400C71FCF /* StilerPipeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88E8A2387C33400C71FCF /* StilerPipeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FC42387C39F00C71FCF /* helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA02387C39E00C71FCF /* helper.h */; };
-		5FC88FC52387C39F00C71FCF /* STKApiKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA32387C39E00C71FCF /* STKApiKeyManager.h */; };
+		5FC88FC52387C39F00C71FCF /* STKApiKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA32387C39E00C71FCF /* STKApiKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FC62387C39F00C71FCF /* STKUUIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EA42387C39E00C71FCF /* STKUUIDManager.m */; };
 		5FC88FC72387C39F00C71FCF /* STKInAppProductsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EA52387C39E00C71FCF /* STKInAppProductsManager.m */; };
 		5FC88FC82387C39F00C71FCF /* STKApiKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EA62387C39E00C71FCF /* STKApiKeyManager.m */; };
-		5FC88FC92387C39F00C71FCF /* STKInAppProductsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA72387C39E00C71FCF /* STKInAppProductsManager.h */; };
-		5FC88FCA2387C39F00C71FCF /* STKUUIDManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA82387C39E00C71FCF /* STKUUIDManager.h */; };
+		5FC88FC92387C39F00C71FCF /* STKInAppProductsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA72387C39E00C71FCF /* STKInAppProductsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FCA2387C39F00C71FCF /* STKUUIDManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA82387C39E00C71FCF /* STKUUIDManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FCB2387C39F00C71FCF /* UIImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA92387C39E00C71FCF /* UIImage+Tint.h */; };
-		5FC88FCC2387C39F00C71FCF /* STKEmptyRecentCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EAC2387C39E00C71FCF /* STKEmptyRecentCell.h */; };
+		5FC88FCC2387C39F00C71FCF /* STKEmptyRecentCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EAC2387C39E00C71FCF /* STKEmptyRecentCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FCD2387C39F00C71FCF /* STKStickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EAD2387C39E00C71FCF /* STKStickerViewCell.m */; };
 		5FC88FCE2387C39F00C71FCF /* STKStickerHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EAE2387C39E00C71FCF /* STKStickerHeaderCell.m */; };
 		5FC88FCF2387C39F00C71FCF /* STKEmptyRecentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EAF2387C39E00C71FCF /* STKEmptyRecentCell.m */; };
 		5FC88FD02387C39F00C71FCF /* STKStickerHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EB02387C39E00C71FCF /* STKStickerHeaderCell.h */; };
-		5FC88FD12387C39F00C71FCF /* STKStickerViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EB12387C39E00C71FCF /* STKStickerViewCell.h */; };
-		5FC88FD22387C39F00C71FCF /* STKStickerHeaderDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EB32387C39E00C71FCF /* STKStickerHeaderDelegateManager.h */; };
+		5FC88FD12387C39F00C71FCF /* STKStickerViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EB12387C39E00C71FCF /* STKStickerViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FD22387C39F00C71FCF /* STKStickerHeaderDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EB32387C39E00C71FCF /* STKStickerHeaderDelegateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FD32387C39F00C71FCF /* STKStickerHeaderDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EB42387C39E00C71FCF /* STKStickerHeaderDelegateManager.m */; };
 		5FC88FD42387C39F00C71FCF /* STKStickerDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EB62387C39E00C71FCF /* STKStickerDelegateManager.h */; };
 		5FC88FD52387C39F00C71FCF /* STKStickerDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EB72387C39E00C71FCF /* STKStickerDelegateManager.m */; };
-		5FC88FD62387C39F00C71FCF /* STKStickersSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EB92387C39E00C71FCF /* STKStickersSeparator.h */; };
+		5FC88FD62387C39F00C71FCF /* STKStickersSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EB92387C39E00C71FCF /* STKStickersSeparator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FD72387C39F00C71FCF /* STKStickersSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EBA2387C39E00C71FCF /* STKStickersSeparator.m */; };
-		5FC88FD82387C39F00C71FCF /* STKStickersConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EBC2387C39E00C71FCF /* STKStickersConstants.h */; };
+		5FC88FD82387C39F00C71FCF /* STKStickersConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EBC2387C39E00C71FCF /* STKStickersConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FD92387C39F00C71FCF /* STKStickersConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EBD2387C39E00C71FCF /* STKStickersConstants.m */; };
 		5FC88FDA2387C39F00C71FCF /* STKStickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EBF2387C39E00C71FCF /* STKStickerController.m */; };
-		5FC88FDB2387C39F00C71FCF /* STKStickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC02387C39E00C71FCF /* STKStickerController.h */; };
+		5FC88FDB2387C39F00C71FCF /* STKStickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC02387C39E00C71FCF /* STKStickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FDC2387C39F00C71FCF /* STKStickersPurchaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EC22387C39E00C71FCF /* STKStickersPurchaseService.m */; };
 		5FC88FDD2387C39F00C71FCF /* STKPurchaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EC32387C39E00C71FCF /* STKPurchaseService.m */; };
-		5FC88FDE2387C39F00C71FCF /* STKStickersPurchaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC42387C39E00C71FCF /* STKStickersPurchaseService.h */; };
-		5FC88FDF2387C39F00C71FCF /* STKPurchaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC52387C39E00C71FCF /* STKPurchaseService.h */; };
-		5FC88FE02387C39F00C71FCF /* STKShowStickerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC72387C39E00C71FCF /* STKShowStickerButton.h */; };
-		5FC88FE12387C39F00C71FCF /* STKBadgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC82387C39E00C71FCF /* STKBadgeView.h */; };
+		5FC88FDE2387C39F00C71FCF /* STKStickersPurchaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC42387C39E00C71FCF /* STKStickersPurchaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FDF2387C39F00C71FCF /* STKPurchaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC52387C39E00C71FCF /* STKPurchaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FE02387C39F00C71FCF /* STKShowStickerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC72387C39E00C71FCF /* STKShowStickerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FE12387C39F00C71FCF /* STKBadgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EC82387C39E00C71FCF /* STKBadgeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FE22387C39F00C71FCF /* STKShowStickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EC92387C39E00C71FCF /* STKShowStickerButton.m */; };
 		5FC88FE32387C39F00C71FCF /* STKBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ECA2387C39E00C71FCF /* STKBadgeView.m */; };
-		5FC88FE42387C39F00C71FCF /* STKSearchDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ECB2387C39E00C71FCF /* STKSearchDelegateManager.h */; };
-		5FC88FE52387C39F00C71FCF /* STKImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ECC2387C39E00C71FCF /* STKImageManager.h */; };
+		5FC88FE42387C39F00C71FCF /* STKSearchDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ECB2387C39E00C71FCF /* STKSearchDelegateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FE52387C39F00C71FCF /* STKImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ECC2387C39E00C71FCF /* STKImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FE62387C39F00C71FCF /* UIImage+CustomBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ECD2387C39E00C71FCF /* UIImage+CustomBundle.m */; };
-		5FC88FE72387C39F00C71FCF /* STKStickersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ECE2387C39E00C71FCF /* STKStickersManager.h */; };
+		5FC88FE72387C39F00C71FCF /* STKStickersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ECE2387C39E00C71FCF /* STKStickersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FE82387C39F00C71FCF /* STKStickersShopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED02387C39E00C71FCF /* STKStickersShopViewController.h */; };
-		5FC88FE92387C39F00C71FCF /* STKStickersShopJsInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED12387C39E00C71FCF /* STKStickersShopJsInterface.h */; };
+		5FC88FE92387C39F00C71FCF /* STKStickersShopJsInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED12387C39E00C71FCF /* STKStickersShopJsInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FEA2387C39F00C71FCF /* STKStickersShopJsInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ED22387C39E00C71FCF /* STKStickersShopJsInterface.m */; };
 		5FC88FEB2387C39F00C71FCF /* STKStickersShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ED32387C39E00C71FCF /* STKStickersShopViewController.m */; };
-		5FC88FEC2387C39F00C71FCF /* STKSearchModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED42387C39E00C71FCF /* STKSearchModel.h */; };
-		5FC88FED2387C39F00C71FCF /* STKUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED52387C39E00C71FCF /* STKUtility.h */; };
-		5FC88FEE2387C39F00C71FCF /* UIImageView+Stickers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED62387C39E00C71FCF /* UIImageView+Stickers.h */; };
+		5FC88FEC2387C39F00C71FCF /* STKSearchModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED42387C39E00C71FCF /* STKSearchModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FED2387C39F00C71FCF /* STKUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED52387C39E00C71FCF /* STKUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FEE2387C39F00C71FCF /* UIImageView+Stickers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED62387C39E00C71FCF /* UIImageView+Stickers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FEF2387C39F00C71FCF /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ED72387C39E00C71FCF /* UIImage+Tint.m */; };
 		5FC88FF02387C39F00C71FCF /* UIImage+CustomBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED82387C39E00C71FCF /* UIImage+CustomBundle.h */; };
 		5FC88FF12387C39F00C71FCF /* STKImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ED92387C39E00C71FCF /* STKImageManager.m */; };
 		5FC88FF22387C39F00C71FCF /* STKSearchDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EDA2387C39E00C71FCF /* STKSearchDelegateManager.m */; };
-		5FC88FF32387C39F00C71FCF /* STKWebserviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EDC2387C39E00C71FCF /* STKWebserviceManager.h */; };
+		5FC88FF32387C39F00C71FCF /* STKWebserviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EDC2387C39E00C71FCF /* STKWebserviceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FF42387C39F00C71FCF /* STKWebserviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EDD2387C39E00C71FCF /* STKWebserviceManager.m */; };
 		5FC88FF52387C39F00C71FCF /* NSPersistentStoreCoordinator+STKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EDF2387C39E00C71FCF /* NSPersistentStoreCoordinator+STKAdditions.m */; };
-		5FC88FF62387C39F00C71FCF /* STKStickersCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE02387C39E00C71FCF /* STKStickersCache.h */; };
+		5FC88FF62387C39F00C71FCF /* STKStickersCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE02387C39E00C71FCF /* STKStickersCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FF72387C39F00C71FCF /* NSManagedObject+STKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE12387C39E00C71FCF /* NSManagedObject+STKAdditions.h */; };
 		5FC88FF82387C39F00C71FCF /* NSManagedObjectContext+STKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EE22387C39E00C71FCF /* NSManagedObjectContext+STKAdditions.m */; };
-		5FC88FF92387C39F00C71FCF /* STKStickerPack+CoreDataClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE42387C39E00C71FCF /* STKStickerPack+CoreDataClass.h */; };
+		5FC88FF92387C39F00C71FCF /* STKStickerPack+CoreDataClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE42387C39E00C71FCF /* STKStickerPack+CoreDataClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FFA2387C39F00C71FCF /* STKStatistic+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EE52387C39E00C71FCF /* STKStatistic+CoreDataProperties.m */; };
-		5FC88FFB2387C39F00C71FCF /* STKSticker+CoreDataClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE62387C39E00C71FCF /* STKSticker+CoreDataClass.h */; };
-		5FC88FFC2387C39F00C71FCF /* STKStickerPack+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE72387C39E00C71FCF /* STKStickerPack+CoreDataProperties.h */; };
-		5FC88FFD2387C39F00C71FCF /* STKStatistic+CoreDataClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE82387C39E00C71FCF /* STKStatistic+CoreDataClass.h */; };
-		5FC88FFE2387C39F00C71FCF /* STKSticker+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE92387C39E00C71FCF /* STKSticker+CoreDataProperties.h */; };
-		5FC88FFF2387C39F00C71FCF /* STKStatistic+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EEA2387C39E00C71FCF /* STKStatistic+CoreDataProperties.h */; };
+		5FC88FFB2387C39F00C71FCF /* STKSticker+CoreDataClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE62387C39E00C71FCF /* STKSticker+CoreDataClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FFC2387C39F00C71FCF /* STKStickerPack+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE72387C39E00C71FCF /* STKStickerPack+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FFD2387C39F00C71FCF /* STKStatistic+CoreDataClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE82387C39E00C71FCF /* STKStatistic+CoreDataClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FFE2387C39F00C71FCF /* STKSticker+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EE92387C39E00C71FCF /* STKSticker+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FFF2387C39F00C71FCF /* STKStatistic+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EEA2387C39E00C71FCF /* STKStatistic+CoreDataProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC890002387C39F00C71FCF /* STKStickerPack+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EEB2387C39E00C71FCF /* STKStickerPack+CoreDataClass.m */; };
 		5FC890012387C39F00C71FCF /* STKSticker+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EEC2387C39E00C71FCF /* STKSticker+CoreDataClass.m */; };
 		5FC890022387C39F00C71FCF /* STKStickerPack+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EED2387C39E00C71FCF /* STKStickerPack+CoreDataProperties.m */; };
@@ -81,28 +81,28 @@
 		5FC890082387C39F00C71FCF /* NSManagedObjectContext+STKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EF32387C39E00C71FCF /* NSManagedObjectContext+STKAdditions.h */; };
 		5FC890092387C39F00C71FCF /* STKSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EF42387C39E00C71FCF /* STKSearchModel.m */; };
 		5FC8900A2387C39F00C71FCF /* STKStickersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EF52387C39E00C71FCF /* STKStickersManager.m */; };
-		5FC8900B2387C39F00C71FCF /* STKOrientationNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EF72387C39E00C71FCF /* STKOrientationNavigationController.h */; };
+		5FC8900B2387C39F00C71FCF /* STKOrientationNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EF72387C39E00C71FCF /* STKOrientationNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC8900C2387C39F00C71FCF /* STKStickersSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EF92387C39E00C71FCF /* STKStickersSettingsViewController.m */; };
-		5FC8900D2387C39F00C71FCF /* STKStickersSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EFA2387C39E00C71FCF /* STKStickersSettingsViewController.h */; };
-		5FC8900E2387C39F00C71FCF /* STKStickerSettingsCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EFC2387C39E00C71FCF /* STKStickerSettingsCell.h */; };
+		5FC8900D2387C39F00C71FCF /* STKStickersSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EFA2387C39E00C71FCF /* STKStickersSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC8900E2387C39F00C71FCF /* STKStickerSettingsCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EFC2387C39E00C71FCF /* STKStickerSettingsCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC8900F2387C39F00C71FCF /* STKStickerSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EFD2387C39E00C71FCF /* STKStickerSettingsCell.m */; };
 		5FC890102387C39F00C71FCF /* STKOrientationNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EFE2387C39E00C71FCF /* STKOrientationNavigationController.m */; };
 		5FC890112387C39F00C71FCF /* SKProduct+STKStickerSKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F002387C39E00C71FCF /* SKProduct+STKStickerSKProduct.m */; };
-		5FC890122387C39F00C71FCF /* SKProduct+STKStickerSKProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F012387C39E00C71FCF /* SKProduct+STKStickerSKProduct.h */; };
+		5FC890122387C39F00C71FCF /* SKProduct+STKStickerSKProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F012387C39E00C71FCF /* SKProduct+STKStickerSKProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC890132387C39F00C71FCF /* UIImageView+Stickers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F022387C39E00C71FCF /* UIImageView+Stickers.m */; };
 		5FC890142387C39F00C71FCF /* STKStickersEntityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F042387C39E00C71FCF /* STKStickersEntityService.m */; };
-		5FC890152387C39F00C71FCF /* STKStickersEntityService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F052387C39E00C71FCF /* STKStickersEntityService.h */; };
+		5FC890152387C39F00C71FCF /* STKStickersEntityService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F052387C39E00C71FCF /* STKStickersEntityService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC890162387C39F00C71FCF /* UIView+LayoutAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F072387C39E00C71FCF /* UIView+LayoutAdditions.m */; };
 		5FC890172387C39F00C71FCF /* NSLayoutConstraint+Addictions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F082387C39E00C71FCF /* NSLayoutConstraint+Addictions.h */; };
 		5FC890182387C39F00C71FCF /* UIAlertController+ShortMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F092387C39E00C71FCF /* UIAlertController+ShortMessage.m */; };
 		5FC890192387C39F00C71FCF /* UIView+ActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0A2387C39E00C71FCF /* UIView+ActivityIndicator.h */; };
-		5FC8901A2387C39F00C71FCF /* UIView+CordsAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0B2387C39E00C71FCF /* UIView+CordsAdditions.h */; };
+		5FC8901A2387C39F00C71FCF /* UIView+CordsAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0B2387C39E00C71FCF /* UIView+CordsAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC8901B2387C39F00C71FCF /* NSLayoutConstraint+Addictions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F0C2387C39E00C71FCF /* NSLayoutConstraint+Addictions.m */; };
 		5FC8901C2387C39F00C71FCF /* UIAlertController+ShortMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0D2387C39E00C71FCF /* UIAlertController+ShortMessage.h */; };
 		5FC8901D2387C39F00C71FCF /* UIView+LayoutAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0E2387C39E00C71FCF /* UIView+LayoutAdditions.h */; };
 		5FC8901E2387C39F00C71FCF /* UIView+ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F0F2387C39E00C71FCF /* UIView+ActivityIndicator.m */; };
 		5FC8901F2387C39F00C71FCF /* UIView+CordsAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F102387C39E00C71FCF /* UIView+CordsAdditions.m */; };
-		5FC890202387C39F00C71FCF /* STKAnalyticService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F122387C39E00C71FCF /* STKAnalyticService.h */; };
+		5FC890202387C39F00C71FCF /* STKAnalyticService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F122387C39E00C71FCF /* STKAnalyticService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC890212387C39F00C71FCF /* STKAnalyticService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F132387C39E00C71FCF /* STKAnalyticService.m */; };
 		5FC890222387C39F00C71FCF /* STKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F142387C39E00C71FCF /* STKUtility.m */; };
 		5FC890232387C39F00C71FCF /* STKStickersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC88F162387C39E00C71FCF /* STKStickersView.xib */; };
@@ -1296,15 +1296,48 @@ StickerPipeTests.xctest */,
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC8901A2387C39F00C71FCF /* UIView+CordsAdditions.h in Headers */,
+				5FC88FF92387C39F00C71FCF /* STKStickerPack+CoreDataClass.h in Headers */,
+				5FC88FD22387C39F00C71FCF /* STKStickerHeaderDelegateManager.h in Headers */,
+				5FC88FE12387C39F00C71FCF /* STKBadgeView.h in Headers */,
+				5FC88FEE2387C39F00C71FCF /* UIImageView+Stickers.h in Headers */,
+				5FC88FE02387C39F00C71FCF /* STKShowStickerButton.h in Headers */,
+				5FC88FE72387C39F00C71FCF /* STKStickersManager.h in Headers */,
+				5FC88FE52387C39F00C71FCF /* STKImageManager.h in Headers */,
+				5FC88FD82387C39F00C71FCF /* STKStickersConstants.h in Headers */,
+				5FC88FDB2387C39F00C71FCF /* STKStickerController.h in Headers */,
+				5FC88FC92387C39F00C71FCF /* STKInAppProductsManager.h in Headers */,
 				5FC890812387C39F00C71FCF /* AFURLRequestSerialization.h in Headers */,
 				5FC88FF32387C39F00C71FCF /* STKWebserviceManager.h in Headers */,
+				5FC890122387C39F00C71FCF /* SKProduct+STKStickerSKProduct.h in Headers */,
+				5FC88FD12387C39F00C71FCF /* STKStickerViewCell.h in Headers */,
+				5FC88FE42387C39F00C71FCF /* STKSearchDelegateManager.h in Headers */,
+				5FC8900D2387C39F00C71FCF /* STKStickersSettingsViewController.h in Headers */,
+				5FC88FEC2387C39F00C71FCF /* STKSearchModel.h in Headers */,
+				5FC88FCC2387C39F00C71FCF /* STKEmptyRecentCell.h in Headers */,
+				5FC88FFC2387C39F00C71FCF /* STKStickerPack+CoreDataProperties.h in Headers */,
+				5FC88FDE2387C39F00C71FCF /* STKStickersPurchaseService.h in Headers */,
+				5FC8900E2387C39F00C71FCF /* STKStickerSettingsCell.h in Headers */,
+				5FC88FDF2387C39F00C71FCF /* STKPurchaseService.h in Headers */,
+				5FC88FED2387C39F00C71FCF /* STKUtility.h in Headers */,
+				5FC88FF62387C39F00C71FCF /* STKStickersCache.h in Headers */,
+				5FC88FCA2387C39F00C71FCF /* STKUUIDManager.h in Headers */,
+				5FC890152387C39F00C71FCF /* STKStickersEntityService.h in Headers */,
+				5FC88FE92387C39F00C71FCF /* STKStickersShopJsInterface.h in Headers */,
+				5FC88FFB2387C39F00C71FCF /* STKSticker+CoreDataClass.h in Headers */,
+				5FC88FFE2387C39F00C71FCF /* STKSticker+CoreDataProperties.h in Headers */,
+				5FC88FFD2387C39F00C71FCF /* STKStatistic+CoreDataClass.h in Headers */,
+				5FC8900B2387C39F00C71FCF /* STKOrientationNavigationController.h in Headers */,
+				5FC88FFF2387C39F00C71FCF /* STKStatistic+CoreDataProperties.h in Headers */,
+				5FC88FC52387C39F00C71FCF /* STKApiKeyManager.h in Headers */,
+				5FC88FD62387C39F00C71FCF /* STKStickersSeparator.h in Headers */,
+				5FC890202387C39F00C71FCF /* STKAnalyticService.h in Headers */,
+				5FC88FE82387C39F00C71FCF /* STKStickersShopViewController.h in Headers */,
 				5FC890AE2387C39F00C71FCF /* Stickerpipe.h in Headers */,
 				5FC890972387C39F00C71FCF /* SDImageCache.h in Headers */,
 				5FC8906B2387C39F00C71FCF /* UIButton+AFNetworking.h in Headers */,
 				5FC890492387C39F00C71FCF /* DFImageRequestOptions.h in Headers */,
 				5FC8901C2387C39F00C71FCF /* UIAlertController+ShortMessage.h in Headers */,
-				5FC88FE82387C39F00C71FCF /* STKStickersShopViewController.h in Headers */,
-				5FC88FEE2387C39F00C71FCF /* UIImageView+Stickers.h in Headers */,
 				5FC8906D2387C39F00C71FCF /* UIImageView+AFNetworking.h in Headers */,
 				5FC890532387C39F00C71FCF /* DFCachedImageResponse.h in Headers */,
 				5FC88FF72387C39F00C71FCF /* NSManagedObject+STKAdditions.h in Headers */,
@@ -1317,50 +1350,31 @@ StickerPipeTests.xctest */,
 				5FC890552387C39F00C71FCF /* DFImageDecoding.h in Headers */,
 				5FC890562387C39F00C71FCF /* DFImageProcessing.h in Headers */,
 				5FC890A22387C39F00C71FCF /* SDWebImageDecoder.h in Headers */,
-				5FC88FC92387C39F00C71FCF /* STKInAppProductsManager.h in Headers */,
-				5FC88FD82387C39F00C71FCF /* STKStickersConstants.h in Headers */,
 				5FC890402387C39F00C71FCF /* DFImageManager.h in Headers */,
-				5FC88FE02387C39F00C71FCF /* STKShowStickerButton.h in Headers */,
 				5FC890482387C39F00C71FCF /* DFImageTask.h in Headers */,
-				5FC890122387C39F00C71FCF /* SKProduct+STKStickerSKProduct.h in Headers */,
-				5FC88FD12387C39F00C71FCF /* STKStickerViewCell.h in Headers */,
 				5FC890622387C39F00C71FCF /* DFImageManagerKit+NSURLSession.h in Headers */,
 				5FC890A32387C39F00C71FCF /* SDWebImageManager.h in Headers */,
 				5FC890952387C39F00C71FCF /* SDWebImageDownloaderOperation.h in Headers */,
 				5FC890732387C39F00C71FCF /* UIImage+AFNetworking.h in Headers */,
-				5FC88FE42387C39F00C71FCF /* STKSearchDelegateManager.h in Headers */,
 				5FC8905A2387C39F00C71FCF /* DFImageFetchingOperation.h in Headers */,
 				5FC8902E2387C39F00C71FCF /* UIImageView+DFImageManager.h in Headers */,
-				5FC88FDB2387C39F00C71FCF /* STKStickerController.h in Headers */,
 				5FC890842387C39F00C71FCF /* AFURLResponseSerialization.h in Headers */,
 				5FC890802387C39F00C71FCF /* AFURLSessionManager.h in Headers */,
-				5FC88FF92387C39F00C71FCF /* STKStickerPack+CoreDataClass.h in Headers */,
 				5FC890592387C39F00C71FCF /* DFImageManaging.h in Headers */,
 				5FC8905D2387C39F00C71FCF /* NSURL+DFPhotosKit.h in Headers */,
-				5FC8900D2387C39F00C71FCF /* STKStickersSettingsViewController.h in Headers */,
-				5FC88FEC2387C39F00C71FCF /* STKSearchModel.h in Headers */,
 				5FC88FC42387C39F00C71FCF /* helper.h in Headers */,
 				5FC890912387C39F00C71FCF /* UIImageView+WebCache.h in Headers */,
 				5FC88E982387C33400C71FCF /* StilerPipeSDK.h in Headers */,
 				5FC890762387C39F00C71FCF /* UIKit+AFNetworking.h in Headers */,
 				5FC890872387C39F00C71FCF /* AFNetworking.h in Headers */,
-				5FC88FCC2387C39F00C71FCF /* STKEmptyRecentCell.h in Headers */,
-				5FC88FFC2387C39F00C71FCF /* STKStickerPack+CoreDataProperties.h in Headers */,
 				5FC890572387C39F00C71FCF /* DFImageCaching.h in Headers */,
-				5FC88FDE2387C39F00C71FCF /* STKStickersPurchaseService.h in Headers */,
 				5FC890082387C39F00C71FCF /* NSManagedObjectContext+STKAdditions.h in Headers */,
 				5FC890502387C39F00C71FCF /* DFImageCache.h in Headers */,
-				5FC8900E2387C39F00C71FCF /* STKStickerSettingsCell.h in Headers */,
-				5FC88FDF2387C39F00C71FCF /* STKPurchaseService.h in Headers */,
 				5FC890722387C39F00C71FCF /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				5FC88FE72387C39F00C71FCF /* STKStickersManager.h in Headers */,
-				5FC88FD22387C39F00C71FCF /* STKStickerHeaderDelegateManager.h in Headers */,
 				5FC88FD02387C39F00C71FCF /* STKStickerHeaderCell.h in Headers */,
 				5FC890342387C39F00C71FCF /* DFImageProcessor.h in Headers */,
 				5FC890192387C39F00C71FCF /* UIView+ActivityIndicator.h in Headers */,
 				5FC890AB2387C39F00C71FCF /* UIImage+MultiFormat.h in Headers */,
-				5FC88FE12387C39F00C71FCF /* STKBadgeView.h in Headers */,
-				5FC88FED2387C39F00C71FCF /* STKUtility.h in Headers */,
 				5FC890772387C39F00C71FCF /* UIRefreshControl+AFNetworking.h in Headers */,
 				5FC890392387C39F00C71FCF /* DFCompositeImageManager.h in Headers */,
 				5FC890642387C39F00C71FCF /* DFURLImageFetcher.h in Headers */,
@@ -1370,37 +1384,24 @@ StickerPipeTests.xctest */,
 				5FC890302387C39F00C71FCF /* DFImageRequest+UIKitAdditions.h in Headers */,
 				5FC88FF02387C39F00C71FCF /* UIImage+CustomBundle.h in Headers */,
 				5FC8904D2387C39F00C71FCF /* DFImageManagerDefines.h in Headers */,
-				5FC88FF62387C39F00C71FCF /* STKStickersCache.h in Headers */,
-				5FC88FCA2387C39F00C71FCF /* STKUUIDManager.h in Headers */,
-				5FC890152387C39F00C71FCF /* STKStickersEntityService.h in Headers */,
 				5FC8905E2387C39F00C71FCF /* DFImageManagerKit+PhotosKit.h in Headers */,
 				5FC8908D2387C39F00C71FCF /* MBProgressHUD.h in Headers */,
-				5FC88FE52387C39F00C71FCF /* STKImageManager.h in Headers */,
-				5FC88FE92387C39F00C71FCF /* STKStickersShopJsInterface.h in Headers */,
-				5FC88FFB2387C39F00C71FCF /* STKSticker+CoreDataClass.h in Headers */,
 				5FC890712387C39F00C71FCF /* UIWebView+AFNetworking.h in Headers */,
 				5FC88FD42387C39F00C71FCF /* STKStickerDelegateManager.h in Headers */,
 				5FC890A72387C39F00C71FCF /* SDWebImageDownloader.h in Headers */,
 				5FC890612387C39F00C71FCF /* DFURLHTTPResponseValidator.h in Headers */,
-				5FC88FFE2387C39F00C71FCF /* STKSticker+CoreDataProperties.h in Headers */,
-				5FC88FFD2387C39F00C71FCF /* STKStatistic+CoreDataClass.h in Headers */,
 				5FC890632387C39F00C71FCF /* DFURLResponseValidating.h in Headers */,
 				5FC890A62387C39F00C71FCF /* SDWebImageOperation.h in Headers */,
 				5FC890312387C39F00C71FCF /* DFImageManagerKit+UI.h in Headers */,
-				5FC8900B2387C39F00C71FCF /* STKOrientationNavigationController.h in Headers */,
 				5FC8903D2387C39F00C71FCF /* DFImageManagerConfiguration.h in Headers */,
 				5FC890742387C39F00C71FCF /* UIProgressView+AFNetworking.h in Headers */,
-				5FC8901A2387C39F00C71FCF /* UIView+CordsAdditions.h in Headers */,
 				5FC890442387C39F00C71FCF /* DFImageManagerImageLoader.h in Headers */,
 				5FC890172387C39F00C71FCF /* NSLayoutConstraint+Addictions.h in Headers */,
-				5FC88FFF2387C39F00C71FCF /* STKStatistic+CoreDataProperties.h in Headers */,
 				5FC8902F2387C39F00C71FCF /* DFCollectionViewPreheatingController.h in Headers */,
 				5FC890A92387C39F00C71FCF /* SDWebImagePrefetcher.h in Headers */,
-				5FC88FC52387C39F00C71FCF /* STKApiKeyManager.h in Headers */,
 				5FC8909E2387C39F00C71FCF /* UIView+WebCacheOperation.h in Headers */,
 				5FC88FCB2387C39F00C71FCF /* UIImage+Tint.h in Headers */,
 				5FC8902A2387C39F00C71FCF /* DFImageView.h in Headers */,
-				5FC88FD62387C39F00C71FCF /* STKStickersSeparator.h in Headers */,
 				5FC8905C2387C39F00C71FCF /* DFPhotosKitImageFetcher.h in Headers */,
 				5FC8906E2387C39F00C71FCF /* AFImageDownloader.h in Headers */,
 				5FC890412387C39F00C71FCF /* DFProgressiveImageDecoder.h in Headers */,
@@ -1409,7 +1410,6 @@ StickerPipeTests.xctest */,
 				5FC890582387C39F00C71FCF /* DFImageFetching.h in Headers */,
 				5FC890462387C39F00C71FCF /* DFImageResponse.h in Headers */,
 				5FC890452387C39F00C71FCF /* DFImageRequest.h in Headers */,
-				5FC890202387C39F00C71FCF /* STKAnalyticService.h in Headers */,
 				5FC890AD2387C39F00C71FCF /* UIImage+GIF.h in Headers */,
 				5FC8908A2387C39F00C71FCF /* AFHTTPSessionManager.h in Headers */,
 				5FC890372387C39F00C71FCF /* DFImageDecoder.h in Headers */,
@@ -1844,7 +1844,8 @@ StickerPipeTests.xctest */;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.StilerPipeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1885,7 +1886,8 @@ StickerPipeTests.xctest */;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.StilerPipeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
