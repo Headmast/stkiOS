@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FC88E912387C33400C71FCF /* StilerPipeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC88E882387C33400C71FCF /* StilerPipeSDK.framework */; };
+		5FC88E912387C33400C71FCF /* Stickerpipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC88E882387C33400C71FCF /* Stickerpipe.framework */; };
 		5FC88E962387C33400C71FCF /* StilerPipeSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88E952387C33400C71FCF /* StilerPipeSDKTests.m */; };
-		5FC88E982387C33400C71FCF /* StilerPipeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88E8A2387C33400C71FCF /* StilerPipeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88E982387C33400C71FCF /* Stickerpipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88E8A2387C33400C71FCF /* Stickerpipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FC42387C39F00C71FCF /* helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA02387C39E00C71FCF /* helper.h */; };
 		5FC88FC52387C39F00C71FCF /* STKApiKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88EA32387C39E00C71FCF /* STKApiKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FC62387C39F00C71FCF /* STKUUIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88EA42387C39E00C71FCF /* STKUUIDManager.m */; };
@@ -269,10 +269,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5FC88E882387C33400C71FCF /* StilerPipeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StilerPipeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FC88E8A2387C33400C71FCF /* StilerPipeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StilerPipeSDK.h; sourceTree = "<group>"; };
+		5FC88E882387C33400C71FCF /* Stickerpipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stickerpipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC88E8A2387C33400C71FCF /* Stickerpipe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stickerpipe.h; sourceTree = "<group>"; };
 		5FC88E8B2387C33400C71FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FC88E902387C33400C71FCF /* StilerPipeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StilerPipeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC88E902387C33400C71FCF /* StickerpipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickerpipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC88E952387C33400C71FCF /* StilerPipeSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StilerPipeSDKTests.m; sourceTree = "<group>"; };
 		5FC88E972387C33400C71FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FC88EA02387C39E00C71FCF /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
@@ -553,7 +553,7 @@ StickerPipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FC88E912387C33400C71FCF /* StilerPipeSDK.framework in Frameworks */,
+				5FC88E912387C33400C71FCF /* Stickerpipe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,13 +587,13 @@ StickerPipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5FC88E892387C33400C71FCF /* StilerPipeSDK */ = {
+		5FC88E892387C33400C71FCF /* StickerPipeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5FC88E8A2387C33400C71FCF /* StilerPipeSDK.h */,
+				5FC88E8A2387C33400C71FCF /* Stickerpipe.h */,
 				5FC88E8B2387C33400C71FCF /* Info.plist */,
 			);
-			path = StilerPipeSDK;
+			path = StickerPipeSDK;
 			sourceTree = "<group>";
 		};
 		5FC88E942387C33400C71FCF /* StilerPipeSDKTests */ = {
@@ -1208,7 +1208,7 @@ StickerPipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper
 				5FC88E9F2387C39E00C71FCF /* SDK */,
 				6EF264561B3C0F830099A657 /* StickerPipe */,
 				6EF264701B3C0F830099A657 /* StickerPipeTests */,
-				5FC88E892387C33400C71FCF /* StilerPipeSDK */,
+				5FC88E892387C33400C71FCF /* StickerPipeSDK */,
 				5FC88E942387C33400C71FCF /* StilerPipeSDKTests */,
 				6EF264551B3C0F830099A657 /* Products */,
 				65DF010521239CF1FEE738E4 /* Pods */,
@@ -1223,8 +1223,8 @@ StickerPipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper
 				6EF2646D1B3C0F830099A657 /* StickerPipe
 StickerPipe
 StickerPipeTests.xctest */,
-				5FC88E882387C33400C71FCF /* StilerPipeSDK.framework */,
-				5FC88E902387C33400C71FCF /* StilerPipeSDKTests.xctest */,
+				5FC88E882387C33400C71FCF /* Stickerpipe.framework */,
+				5FC88E902387C33400C71FCF /* StickerpipeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1364,7 +1364,7 @@ StickerPipeTests.xctest */,
 				5FC8905D2387C39F00C71FCF /* NSURL+DFPhotosKit.h in Headers */,
 				5FC88FC42387C39F00C71FCF /* helper.h in Headers */,
 				5FC890912387C39F00C71FCF /* UIImageView+WebCache.h in Headers */,
-				5FC88E982387C33400C71FCF /* StilerPipeSDK.h in Headers */,
+				5FC88E982387C33400C71FCF /* Stickerpipe.h in Headers */,
 				5FC890762387C39F00C71FCF /* UIKit+AFNetworking.h in Headers */,
 				5FC890872387C39F00C71FCF /* AFNetworking.h in Headers */,
 				5FC890572387C39F00C71FCF /* DFImageCaching.h in Headers */,
@@ -1421,9 +1421,9 @@ StickerPipeTests.xctest */,
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5FC88E872387C33400C71FCF /* StilerPipeSDK */ = {
+		5FC88E872387C33400C71FCF /* Stickerpipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FC88E992387C33400C71FCF /* Build configuration list for PBXNativeTarget "StilerPipeSDK" */;
+			buildConfigurationList = 5FC88E992387C33400C71FCF /* Build configuration list for PBXNativeTarget "Stickerpipe" */;
 			buildPhases = (
 				5FC88E832387C33400C71FCF /* Headers */,
 				5FC88E842387C33400C71FCF /* Sources */,
@@ -1434,14 +1434,14 @@ StickerPipeTests.xctest */,
 			);
 			dependencies = (
 			);
-			name = StilerPipeSDK;
+			name = Stickerpipe;
 			productName = StilerPipeSDK;
-			productReference = 5FC88E882387C33400C71FCF /* StilerPipeSDK.framework */;
+			productReference = 5FC88E882387C33400C71FCF /* Stickerpipe.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5FC88E8F2387C33400C71FCF /* StilerPipeSDKTests */ = {
+		5FC88E8F2387C33400C71FCF /* StickerpipeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FC88E9C2387C33400C71FCF /* Build configuration list for PBXNativeTarget "StilerPipeSDKTests" */;
+			buildConfigurationList = 5FC88E9C2387C33400C71FCF /* Build configuration list for PBXNativeTarget "StickerpipeTests" */;
 			buildPhases = (
 				5FC88E8C2387C33400C71FCF /* Sources */,
 				5FC88E8D2387C33400C71FCF /* Frameworks */,
@@ -1452,9 +1452,9 @@ StickerPipeTests.xctest */,
 			dependencies = (
 				5FC88E932387C33400C71FCF /* PBXTargetDependency */,
 			);
-			name = StilerPipeSDKTests;
+			name = StickerpipeTests;
 			productName = StilerPipeSDKTests;
-			productReference = 5FC88E902387C33400C71FCF /* StilerPipeSDKTests.xctest */;
+			productReference = 5FC88E902387C33400C71FCF /* StickerpipeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		6EF264531B3C0F830099A657 /* StickerPipe */ = {
@@ -1542,8 +1542,8 @@ StickerPipeTests.xctest */;
 			targets = (
 				6EF264531B3C0F830099A657 /* StickerPipe */,
 				6EF2646C1B3C0F830099A657 /* StickerPipeTests */,
-				5FC88E872387C33400C71FCF /* StilerPipeSDK */,
-				5FC88E8F2387C33400C71FCF /* StilerPipeSDKTests */,
+				5FC88E872387C33400C71FCF /* Stickerpipe */,
+				5FC88E8F2387C33400C71FCF /* StickerpipeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1785,7 +1785,7 @@ StickerPipeTests.xctest */;
 /* Begin PBXTargetDependency section */
 		5FC88E932387C33400C71FCF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5FC88E872387C33400C71FCF /* StilerPipeSDK */;
+			target = 5FC88E872387C33400C71FCF /* Stickerpipe */;
 			targetProxy = 5FC88E922387C33400C71FCF /* PBXContainerItemProxy */;
 		};
 		6EF2646F1B3C0F830099A657 /* PBXTargetDependency */ = {
@@ -1835,13 +1835,13 @@ StickerPipeTests.xctest */;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = StilerPipeSDK/Info.plist;
+				INFOPLIST_FILE = Stickerpipe/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.StilerPipeSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.Stickerpipe;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -1878,12 +1878,12 @@ StickerPipeTests.xctest */;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = StilerPipeSDK/Info.plist;
+				INFOPLIST_FILE = Stickerpipe/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.StilerPipeSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.hdmast.Stickerpipe;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -2131,7 +2131,7 @@ StickerPipeTests.xctest */;
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5FC88E992387C33400C71FCF /* Build configuration list for PBXNativeTarget "StilerPipeSDK" */ = {
+		5FC88E992387C33400C71FCF /* Build configuration list for PBXNativeTarget "Stickerpipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FC88E9A2387C33400C71FCF /* Debug */,
@@ -2140,7 +2140,7 @@ StickerPipeTests.xctest */;
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FC88E9C2387C33400C71FCF /* Build configuration list for PBXNativeTarget "StilerPipeSDKTests" */ = {
+		5FC88E9C2387C33400C71FCF /* Build configuration list for PBXNativeTarget "StickerpipeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FC88E9D2387C33400C71FCF /* Debug */,
