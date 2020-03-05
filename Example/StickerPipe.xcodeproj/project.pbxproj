@@ -96,7 +96,7 @@
 		5FC890172387C39F00C71FCF /* NSLayoutConstraint+Addictions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F082387C39E00C71FCF /* NSLayoutConstraint+Addictions.h */; };
 		5FC890182387C39F00C71FCF /* UIAlertController+ShortMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F092387C39E00C71FCF /* UIAlertController+ShortMessage.m */; };
 		5FC890192387C39F00C71FCF /* UIView+ActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0A2387C39E00C71FCF /* UIView+ActivityIndicator.h */; };
-		5FC8901A2387C39F00C71FCF /* UIView+CordsAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0B2387C39E00C71FCF /* UIView+CordsAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC8901A2387C39F00C71FCF /* UIView+CordsAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0B2387C39E00C71FCF /* UIView+CordsAdditions.h */; };
 		5FC8901B2387C39F00C71FCF /* NSLayoutConstraint+Addictions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88F0C2387C39E00C71FCF /* NSLayoutConstraint+Addictions.m */; };
 		5FC8901C2387C39F00C71FCF /* UIAlertController+ShortMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0D2387C39E00C71FCF /* UIAlertController+ShortMessage.h */; };
 		5FC8901D2387C39F00C71FCF /* UIView+LayoutAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88F0E2387C39E00C71FCF /* UIView+LayoutAdditions.h */; };
