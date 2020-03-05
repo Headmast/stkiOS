@@ -23,4 +23,3 @@ FOUNDATION_EXPORT const unsigned char StickerpipeVersionString[];
 #import <Stickerpipe/STKShowStickerButton.h>
 #import <Stickerpipe/UIImageView+Stickers.h>
 #import <Stickerpipe/STKStickerHeaderDelegateManager.h>
-#import <Stickerpipe/UIView+CordsAdditions.h>
