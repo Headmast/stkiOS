@@ -10,7 +10,6 @@
 #import "STKStickersSettingsViewController.h"
 #import "STKStickersEntityService.h"
 #import "STKStickerSettingsCell.h"
-#import "STKStickersShopViewController.h"
 #import "STKStickerController.h"
 #import "STKWebserviceManager.h"
 #import "UIImage+CustomBundle.h"
@@ -111,13 +110,8 @@ NSString* const kCellIdentifier = @"STKStickerSettingsCell";
 
 - (void)tableView: (UITableView*)tableView didSelectRowAtIndexPath: (NSIndexPath*)indexPath {
 	STKStickerPack* stickerPack = [self.frc objectAtIndexPath: indexPath];
-
-	STKStickersShopViewController* shopViewController = [STKStickersShopViewController viewControllerFromNib: @"STKStickersShopViewController"];
 	[self saveReorderings];
-	shopViewController.delegate = self.delegate;
 	[self.delegate showStickersView];
-	shopViewController.packName = stickerPack.packName;
-	[self.navigationController pushViewController: shopViewController animated: YES];
 	[self.tableView deselectRowAtIndexPath: indexPath animated: YES];
 }
 
