@@ -662,22 +662,6 @@ void *modifiedPacksContext = &modifiedPacksContext;
 	return lastWord;
 }
 
-#pragma mark - STKStickersShopViewControllerDelegate
-
-- (void)showStickersCollection {
-    [self hideStickersView];
-    UIViewController* presentViewController = [self.delegate stickerControllerViewControllerForPresentingModalView];
-    [presentViewController dismissViewControllerAnimated: YES completion: nil];
-
-    [self collectionsButtonAction: nil];
-
-    id <STKStickerControllerDelegate> o = self.delegate;
-    if ([o respondsToSelector: @selector(showStickersCollection)]) {
-        [o showStickersCollection];
-    }
-}
-
-
 - (void)hideSuggestCollectionViewIfNeeded {
 	if (self.isSuggestArrayNotEmpty) {
 		[self hideSuggestCollectionView];
