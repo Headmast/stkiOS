@@ -46,8 +46,10 @@
 		5FC88FE52387C39F00C71FCF /* STKImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ECC2387C39E00C71FCF /* STKImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FE62387C39F00C71FCF /* UIImage+CustomBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ECD2387C39E00C71FCF /* UIImage+CustomBundle.m */; };
 		5FC88FE72387C39F00C71FCF /* STKStickersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ECE2387C39E00C71FCF /* STKStickersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC88FE82387C39F00C71FCF /* STKStickersShopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED02387C39E00C71FCF /* STKStickersShopViewController.h */; };
 		5FC88FE92387C39F00C71FCF /* STKStickersShopJsInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED12387C39E00C71FCF /* STKStickersShopJsInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FEA2387C39F00C71FCF /* STKStickersShopJsInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ED22387C39E00C71FCF /* STKStickersShopJsInterface.m */; };
+		5FC88FEB2387C39F00C71FCF /* STKStickersShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC88ED32387C39E00C71FCF /* STKStickersShopViewController.m */; };
 		5FC88FEC2387C39F00C71FCF /* STKSearchModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED42387C39E00C71FCF /* STKSearchModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FED2387C39F00C71FCF /* STKUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED52387C39E00C71FCF /* STKUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC88FEE2387C39F00C71FCF /* UIImageView+Stickers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC88ED62387C39E00C71FCF /* UIImageView+Stickers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -309,8 +311,10 @@
 		5FC88ECC2387C39E00C71FCF /* STKImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKImageManager.h; sourceTree = "<group>"; };
 		5FC88ECD2387C39E00C71FCF /* UIImage+CustomBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CustomBundle.m"; sourceTree = "<group>"; };
 		5FC88ECE2387C39E00C71FCF /* STKStickersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKStickersManager.h; sourceTree = "<group>"; };
+		5FC88ED02387C39E00C71FCF /* STKStickersShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKStickersShopViewController.h; sourceTree = "<group>"; };
 		5FC88ED12387C39E00C71FCF /* STKStickersShopJsInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKStickersShopJsInterface.h; sourceTree = "<group>"; };
 		5FC88ED22387C39E00C71FCF /* STKStickersShopJsInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKStickersShopJsInterface.m; sourceTree = "<group>"; };
+		5FC88ED32387C39E00C71FCF /* STKStickersShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKStickersShopViewController.m; sourceTree = "<group>"; };
 		5FC88ED42387C39E00C71FCF /* STKSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKSearchModel.h; sourceTree = "<group>"; };
 		5FC88ED52387C39E00C71FCF /* STKUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKUtility.h; sourceTree = "<group>"; };
 		5FC88ED62387C39E00C71FCF /* UIImageView+Stickers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Stickers.h"; sourceTree = "<group>"; };
@@ -758,8 +762,10 @@ StickerPipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper
 		5FC88ECF2387C39E00C71FCF /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				5FC88ED02387C39E00C71FCF /* STKStickersShopViewController.h */,
 				5FC88ED12387C39E00C71FCF /* STKStickersShopJsInterface.h */,
 				5FC88ED22387C39E00C71FCF /* STKStickersShopJsInterface.m */,
+				5FC88ED32387C39E00C71FCF /* STKStickersShopViewController.m */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -1326,6 +1332,7 @@ StickerPipeTests.xctest */,
 				5FC88FC52387C39F00C71FCF /* STKApiKeyManager.h in Headers */,
 				5FC88FD62387C39F00C71FCF /* STKStickersSeparator.h in Headers */,
 				5FC890202387C39F00C71FCF /* STKAnalyticService.h in Headers */,
+				5FC88FE82387C39F00C71FCF /* STKStickersShopViewController.h in Headers */,
 				5FC890AE2387C39F00C71FCF /* Stickerpipe.h in Headers */,
 				5FC890972387C39F00C71FCF /* SDImageCache.h in Headers */,
 				5FC8906B2387C39F00C71FCF /* UIButton+AFNetworking.h in Headers */,
@@ -1684,6 +1691,7 @@ StickerPipeTests.xctest */;
 				5FC88FDC2387C39F00C71FCF /* STKStickersPurchaseService.m in Sources */,
 				5FC890132387C39F00C71FCF /* UIImageView+Stickers.m in Sources */,
 				5FC8909D2387C39F00C71FCF /* SDWebImagePrefetcher.m in Sources */,
+				5FC88FEB2387C39F00C71FCF /* STKStickersShopViewController.m in Sources */,
 				5FC890422387C39F00C71FCF /* DFImageManagerImageLoader.m in Sources */,
 				5FC890A12387C39F00C71FCF /* SDWebImageDownloaderOperation.m in Sources */,
 				5FC8905B2387C39F00C71FCF /* NSURL+DFPhotosKit.m in Sources */,

@@ -8,6 +8,7 @@
 
 
 @class STKStickersSettingsViewController;
+@protocol STKStickersShopViewControllerDelegate;
 
 @protocol STKStickersSettingsViewControllerDelegate<NSObject>
 - (void)showStickersView;
@@ -15,5 +16,5 @@
 @end
 
 @interface STKStickersSettingsViewController : UIViewController
-@property (nonatomic, weak) id <STKStickersSettingsViewControllerDelegate> delegate;
+@property (nonatomic, weak) id <STKStickersSettingsViewControllerDelegate, STKStickersShopViewControllerDelegate> delegate;
 @end

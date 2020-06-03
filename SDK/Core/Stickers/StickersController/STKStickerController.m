@@ -16,6 +16,7 @@
 #import "STKStickersEntityService.h"
 #import "STKEmptyRecentCell.h"
 #import "STKStickersSettingsViewController.h"
+#import "STKStickersShopViewController.h"
 #import "STKOrientationNavigationController.h"
 #import "STKShowStickerButton.h"
 #import "STKAnalyticService.h"
@@ -30,10 +31,11 @@
 #import "MBProgressHUD.h"
 #import "UIView+CordsAdditions.h"
 
-@interface STKStickerController () <UITextViewDelegate, STKStickersSettingsViewControllerDelegate, STKStickerHeaderCollectionViewDelegate>
+@interface STKStickerController () <UITextViewDelegate, STKStickersSettingsViewControllerDelegate, STKStickersShopViewControllerDelegate, STKStickerHeaderCollectionViewDelegate>
 
 @property (nonatomic) IBOutlet UIView* internalStickersView;
 @property (nonatomic, weak) IBOutlet UICollectionView* stickersHeaderCollectionView;
+@property (nonatomic, weak) IBOutlet STKShowStickerButton* stickersShopButton;
 @property (nonatomic, weak) IBOutlet UIView* errorView;
 @property (nonatomic, weak) IBOutlet UILabel* errorLabel;
 
@@ -43,6 +45,7 @@
 
 @property (nonatomic) STKStickersEntityService* stickersService;
 
+@property (nonatomic) STKStickersShopViewController* shopViewController;
 @property (nonatomic) STKStickersSettingsViewController* settingsViewController;
 
 @property (nonatomic) STKSearchDelegateManager* searchDelegateManager;
@@ -92,6 +95,10 @@ void *modifiedPacksContext = &modifiedPacksContext;
 		self.stickersDelegateManager = [STKStickerDelegateManager new];
 
 		self.stickersHeaderDelegateManager = [STKStickerHeaderDelegateManager new];
+
+		self.stickersShopButton.badgeBorderColor = [STKUtility defaultGreyColor];
+		self.stickersShopButton.tintColor = [STKUtility defaultBlueColor];
+		self.stickersShopButton.backgroundColor = [STKUtility defaultGreyColor];
 
 		[self initInternalStickerView];
 		[self initStickerHeader];
@@ -159,6 +166,9 @@ void *modifiedPacksContext = &modifiedPacksContext;
 - (void)initStickerHeader {
 	typeof(self) __weak weakSelf = self;
 
+	[self.stickersShopButton setImage: [[UIImage imageNamedInCustomBundle: @"STKShopIcon"] imageWithRenderingMode: UIImageRenderingModeAlwaysTemplate] forState: UIControlStateNormal];
+	self.stickersShopButton.tintColor = [UIColor grayColor];
+
 	self.stickersHeaderDelegateManager.delegate = self;
 
 	self.stickersHeaderDelegateManager.didSelectRow = ^ (NSIndexPath* indexPath, STKStickerPack* stickerPack, BOOL animated) {
@@ -179,6 +189,8 @@ void *modifiedPacksContext = &modifiedPacksContext;
 	[self.stickersHeaderCollectionView registerClass: [STKStickerHeaderCell class] forCellWithReuseIdentifier: @"STKStickerPanelHeaderCell"];
 
 	self.stickersHeaderCollectionView.backgroundColor = [STKUtility defaultGreyColor];
+
+	self.stickersShopButton.badgeView.hidden = !self.stickersService.hasNewModifiedPacks;
 }
 
 - (void)initKeyBoardButton {
@@ -262,6 +274,8 @@ void *modifiedPacksContext = &modifiedPacksContext;
 
 - (void)setHeaderBackgroundColor: (UIColor*)headerBackgroundColor {
 	_headerBackgroundColor = headerBackgroundColor;
+
+	self.stickersShopButton.backgroundColor = headerBackgroundColor;
 	self.stickersHeaderCollectionView.backgroundColor = headerBackgroundColor;
 }
 
@@ -330,6 +344,7 @@ void *modifiedPacksContext = &modifiedPacksContext;
 
 	if ([isNotification isEqualToString: @"yes"]) {
 		if ([vc isEqualToString: @"shop"]) {
+			[_shopViewController presentViewController: navigationController animated: YES completion: nil];
 			[self setUserDefaultsValue];
 		} else if ([vc isEqualToString: @"settings"]) {
 			[_settingsViewController presentViewController: navigationController animated: YES completion: nil];
@@ -372,6 +387,16 @@ void *modifiedPacksContext = &modifiedPacksContext;
 }
 
 - (void)stickersShopButtonAction: (id)sender {
+	if (!_shopViewController) {
+		_shopViewController = [STKStickersShopViewController viewControllerFromNib: @"STKStickersShopViewController"];
+
+		_shopViewController.delegate = self;
+	}
+
+	self.stickersService.hasNewModifiedPacks = NO;
+	self.stickersShopButton.badgeView.hidden = YES;
+	[self showModalViewController: _shopViewController];
+
 	[self updateRecents];
 
 	id <STKStickerControllerDelegate> o = self.delegate;
@@ -445,17 +470,32 @@ void *modifiedPacksContext = &modifiedPacksContext;
 
 - (void)showPackInfoControllerWithStickerMessage: (NSString*)message {
 	[self hideStickersView];
+
+	STKStickersShopViewController* vc = [STKStickersShopViewController viewControllerFromNib: @"STKStickersShopViewController"];
+
+	vc.delegate = self;
 	[self showStickersView];
 
 	if ([self isStickerPackDownloaded: message]) {
+		vc.packName = [self.stickersService packNameForStickerId: [STKUtility stickerIdWithMessage: message]];
+		[self showModalViewController: vc];
 	} else {
 		[self.stickersService getPackNameForMessage: message completion: ^ (NSString* packName) {
+			vc.packName = packName;
+			dispatch_async(dispatch_get_main_queue(), ^ {
+				[self showModalViewController: vc];
+			});
 		}];
 	}
 }
 
 - (void)showPackInfoControllerWithName: (NSString*)packName {
+	STKStickersShopViewController* vc = [STKStickersShopViewController viewControllerFromNib: @"STKStickersShopViewController"];
+
+	vc.delegate = self;
+	vc.packName = packName;
 	[self showStickersView];
+	[self showModalViewController: vc];
 }
 
 - (void)selectPack: (NSUInteger)index {
@@ -617,7 +657,8 @@ void *modifiedPacksContext = &modifiedPacksContext;
 						change: (NSDictionary*)change
 					   context: (void*)context {
 	if (context == modifiedPacksContext) {
-		self.keyboardButton.badgeView.hidden = YES;
+		self.keyboardButton.badgeView.hidden = !self.stickersService.hasNewModifiedPacks;
+		self.stickersShopButton.badgeView.hidden = !self.stickersService.hasNewModifiedPacks;
 	} else if (object == [STKWebserviceManager sharedInstance]) {
 		if ([change[NSKeyValueChangeNewKey] boolValue]) {
 			self.errorView.hidden = YES;
@@ -662,9 +703,76 @@ void *modifiedPacksContext = &modifiedPacksContext;
 	return lastWord;
 }
 
+
+#pragma mark - STKStickersShopViewControllerDelegate
+
+- (void)showStickersCollection {
+	[self hideStickersView];
+	UIViewController* presentViewController = [self.delegate stickerControllerViewControllerForPresentingModalView];
+	[presentViewController dismissViewControllerAnimated: YES completion: nil];
+
+	[self collectionsButtonAction: nil];
+
+	id <STKStickerControllerDelegate> o = self.delegate;
+	if ([o respondsToSelector: @selector(showStickersCollection)]) {
+		[o showStickersCollection];
+	}
+}
+
+- (void)packRemoved: (STKStickerPack*)packObject fromController: (STKStickersShopViewController*)shopController {
+	id <STKStickerControllerDelegate> o = self.delegate;
+	if ([o respondsToSelector: @selector(packRemoved:)]) {
+		[o packRemoved: packObject];
+	}
+}
+
 - (void)hideSuggestCollectionViewIfNeeded {
 	if (self.isSuggestArrayNotEmpty) {
 		[self hideSuggestCollectionView];
+	}
+}
+
+- (void)showPackWithName: (NSString*)name fromController: (STKStickersShopViewController*)shopController {
+	NSUInteger stickerIndex = [self.stickersService indexOfPackWithName: name];
+	if (self.recentPresented) {
+		++stickerIndex;
+	}
+	[self setPackSelectedAtIndex: stickerIndex];
+
+	if ([self.stickersHeaderCollectionView numberOfItemsInSection: 0] - 1 >= stickerIndex) {
+		NSIndexPath* indexPath = [NSIndexPath indexPathForItem: stickerIndex inSection: 0];
+		[self.stickersHeaderDelegateManager scrollToIndexPath: indexPath animated: NO];
+	}
+
+	id <STKStickerControllerDelegate> o = self.delegate;
+	if ([o respondsToSelector: @selector(newPackShown)]) {
+		[o newPackShown];
+	}
+}
+
+- (void)packWithName: (NSString*)packName downloadedFromController: (STKStickersShopViewController*)shopController {
+	[self.stickersService getStickerPacksWithCompletion: ^ (NSArray<STKStickerPack*>* stickerPacks) {
+		NSIndexPath* path = [NSIndexPath indexPathForRow: self.recentPresented ? 1 : 0 inSection: 0];
+
+		[self setPackSelectedAtIndex: path.item];
+
+		[self.stickersHeaderCollectionView selectItemAtIndexPath: path
+														animated: NO
+												  scrollPosition: UICollectionViewScrollPositionCenteredHorizontally];
+		[self.stickersHeaderDelegateManager collectionView: self.stickersHeaderCollectionView
+								  didSelectItemAtIndexPath: path];
+	}];
+
+	id <STKStickerControllerDelegate> o = self.delegate;
+	if ([o respondsToSelector: @selector(newPackDownloaded)]) {
+		[o newPackDownloaded];
+	}
+}
+
+- (void)packPurchasedWithName: (NSString*)packName price: (NSString*)packPrice fromController: (STKStickersShopViewController*)shopController {
+	id <STKStickerControllerDelegate> o = self.delegate;
+	if ([o respondsToSelector: @selector(packPurchasedWithName:price:)]) {
+		[o packPurchasedWithName: packName price: packPrice];
 	}
 }
 
