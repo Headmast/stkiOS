@@ -58,9 +58,6 @@
                             <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="stickersShopButtonAction:" destination="-1" eventType="touchUpInside" id="w6a-AE-gf1"/>
-                    </connections>
                 </button>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAi-C4-ca8">
                     <rect key="frame" x="0.0" y="44" width="320" height="30"/>
