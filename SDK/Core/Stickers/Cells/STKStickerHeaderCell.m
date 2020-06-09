@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 908 Inc. All rights reserved.
 //
 
-#import <DFImageManager/DFImageTask.h>
-#import <DFImageManager/DFImageRequestOptions.h>
-#import <DFImageManager/DFImageRequest.h>
-#import <DFImageManager/DFImageManager.h>
+#import "DFImageTask.h"
+#import "DFImageRequestOptions.h"
+#import "DFImageRequest.h"
+#import "DFImageManager.h"
 #import "STKStickerHeaderCell.h"
 #import "STKUtility.h"
 #import "UIImage+Tint.h"

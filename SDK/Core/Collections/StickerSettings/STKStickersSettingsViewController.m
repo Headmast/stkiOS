@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 908 Inc. All rights reserved.
 //
 
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD.h"
 #import "STKStickersSettingsViewController.h"
 #import "STKStickersEntityService.h"
 #import "STKStickerSettingsCell.h"
