@@ -3,7 +3,6 @@
 // Copyright (c) 2016 908 Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 @class AFHTTPSessionManager;
 @class STKSearchModel;
 @class DFImageTask;

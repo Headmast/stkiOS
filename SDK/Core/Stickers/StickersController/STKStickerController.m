@@ -16,7 +16,6 @@
 #import "STKStickersEntityService.h"
 #import "STKEmptyRecentCell.h"
 #import "STKStickersSettingsViewController.h"
-#import "STKStickersShopViewController.h"
 #import "STKOrientationNavigationController.h"
 #import "STKShowStickerButton.h"
 #import "STKAnalyticService.h"
@@ -31,7 +30,7 @@
 #import "MBProgressHUD.h"
 #import "UIView+CordsAdditions.h"
 
-@interface STKStickerController () <UITextViewDelegate, STKStickersSettingsViewControllerDelegate, STKStickersShopViewControllerDelegate, STKStickerHeaderCollectionViewDelegate>
+@interface STKStickerController () <UITextViewDelegate, STKStickersSettingsViewControllerDelegate, STKStickerHeaderCollectionViewDelegate>
 
 @property (nonatomic) IBOutlet UIView* internalStickersView;
 @property (nonatomic, weak) IBOutlet UICollectionView* stickersHeaderCollectionView;
@@ -45,7 +44,6 @@
 
 @property (nonatomic) STKStickersEntityService* stickersService;
 
-@property (nonatomic) STKStickersShopViewController* shopViewController;
 @property (nonatomic) STKStickersSettingsViewController* settingsViewController;
 
 @property (nonatomic) STKSearchDelegateManager* searchDelegateManager;
@@ -344,7 +342,6 @@ void *modifiedPacksContext = &modifiedPacksContext;
 
 	if ([isNotification isEqualToString: @"yes"]) {
 		if ([vc isEqualToString: @"shop"]) {
-			[_shopViewController presentViewController: navigationController animated: YES completion: nil];
 			[self setUserDefaultsValue];
 		} else if ([vc isEqualToString: @"settings"]) {
 			[_settingsViewController presentViewController: navigationController animated: YES completion: nil];
@@ -387,22 +384,6 @@ void *modifiedPacksContext = &modifiedPacksContext;
 }
 
 - (void)stickersShopButtonAction: (id)sender {
-	if (!_shopViewController) {
-		_shopViewController = [STKStickersShopViewController viewControllerFromNib: @"STKStickersShopViewController"];
-
-		_shopViewController.delegate = self;
-	}
-
-	self.stickersService.hasNewModifiedPacks = NO;
-	self.stickersShopButton.badgeView.hidden = YES;
-	[self showModalViewController: _shopViewController];
-
-	[self updateRecents];
-
-	id <STKStickerControllerDelegate> o = self.delegate;
-	if ([o respondsToSelector: @selector(shopOpened)]) {
-		[o shopOpened];
-	}
 }
 
 - (void)keyboardButtonAction: (UIButton*)keyboardButton {
@@ -470,32 +451,18 @@ void *modifiedPacksContext = &modifiedPacksContext;
 
 - (void)showPackInfoControllerWithStickerMessage: (NSString*)message {
 	[self hideStickersView];
-
-	STKStickersShopViewController* vc = [STKStickersShopViewController viewControllerFromNib: @"STKStickersShopViewController"];
-
-	vc.delegate = self;
+    
 	[self showStickersView];
 
 	if ([self isStickerPackDownloaded: message]) {
-		vc.packName = [self.stickersService packNameForStickerId: [STKUtility stickerIdWithMessage: message]];
-		[self showModalViewController: vc];
 	} else {
 		[self.stickersService getPackNameForMessage: message completion: ^ (NSString* packName) {
-			vc.packName = packName;
-			dispatch_async(dispatch_get_main_queue(), ^ {
-				[self showModalViewController: vc];
-			});
 		}];
 	}
 }
 
 - (void)showPackInfoControllerWithName: (NSString*)packName {
-	STKStickersShopViewController* vc = [STKStickersShopViewController viewControllerFromNib: @"STKStickersShopViewController"];
-
-	vc.delegate = self;
-	vc.packName = packName;
 	[self showStickersView];
-	[self showModalViewController: vc];
 }
 
 - (void)selectPack: (NSUInteger)index {
@@ -571,8 +538,7 @@ void *modifiedPacksContext = &modifiedPacksContext;
 - (void)reloadStickersInputViews {
 	[self.textInputView reloadInputViews];
 	if (!self.isKeyboardShowed) {
-        [self.textInputView resignFirstResponder];
-        [self.textInputView becomeFirstResponder];
+		[self.textInputView becomeFirstResponder];
 	}
 }
 
@@ -719,60 +685,9 @@ void *modifiedPacksContext = &modifiedPacksContext;
 	}
 }
 
-- (void)packRemoved: (STKStickerPack*)packObject fromController: (STKStickersShopViewController*)shopController {
-	id <STKStickerControllerDelegate> o = self.delegate;
-	if ([o respondsToSelector: @selector(packRemoved:)]) {
-		[o packRemoved: packObject];
-	}
-}
-
 - (void)hideSuggestCollectionViewIfNeeded {
 	if (self.isSuggestArrayNotEmpty) {
 		[self hideSuggestCollectionView];
-	}
-}
-
-- (void)showPackWithName: (NSString*)name fromController: (STKStickersShopViewController*)shopController {
-	NSUInteger stickerIndex = [self.stickersService indexOfPackWithName: name];
-	if (self.recentPresented) {
-		++stickerIndex;
-	}
-	[self setPackSelectedAtIndex: stickerIndex];
-
-	if ([self.stickersHeaderCollectionView numberOfItemsInSection: 0] - 1 >= stickerIndex) {
-		NSIndexPath* indexPath = [NSIndexPath indexPathForItem: stickerIndex inSection: 0];
-		[self.stickersHeaderDelegateManager scrollToIndexPath: indexPath animated: NO];
-	}
-
-	id <STKStickerControllerDelegate> o = self.delegate;
-	if ([o respondsToSelector: @selector(newPackShown)]) {
-		[o newPackShown];
-	}
-}
-
-- (void)packWithName: (NSString*)packName downloadedFromController: (STKStickersShopViewController*)shopController {
-	[self.stickersService getStickerPacksWithCompletion: ^ (NSArray<STKStickerPack*>* stickerPacks) {
-		NSIndexPath* path = [NSIndexPath indexPathForRow: self.recentPresented ? 1 : 0 inSection: 0];
-
-		[self setPackSelectedAtIndex: path.item];
-
-		[self.stickersHeaderCollectionView selectItemAtIndexPath: path
-														animated: NO
-												  scrollPosition: UICollectionViewScrollPositionCenteredHorizontally];
-		[self.stickersHeaderDelegateManager collectionView: self.stickersHeaderCollectionView
-								  didSelectItemAtIndexPath: path];
-	}];
-
-	id <STKStickerControllerDelegate> o = self.delegate;
-	if ([o respondsToSelector: @selector(newPackDownloaded)]) {
-		[o newPackDownloaded];
-	}
-}
-
-- (void)packPurchasedWithName: (NSString*)packName price: (NSString*)packPrice fromController: (STKStickersShopViewController*)shopController {
-	id <STKStickerControllerDelegate> o = self.delegate;
-	if ([o respondsToSelector: @selector(packPurchasedWithName:price:)]) {
-		[o packPurchasedWithName: packName price: packPrice];
 	}
 }
 

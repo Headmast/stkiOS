@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 908 Inc. All rights reserved.
 //
 
-#import "SDWebImageManager.h"
+#import <SDWebImage/SDWebImageManager.h>
 #import "STKStickerViewCell.h"
 #import "UIImage+Tint.h"
 #import "STKUtility.h"
